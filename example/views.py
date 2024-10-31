@@ -3,14 +3,13 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
-from django.conf import settings
 from .models import Movie
 
 def index(request):
     return Response("Hello World")
 
 class MovieListView(APIView):
-    OMDB_API_KEY = settings.SECRET_KEY  # Chave secreta da OMDb API (oculta na .env)
+    OMDB_API_KEY = 'd4d2fab4'  # Chave secreta da OMDb API
 
     def get(self, request):
         search = request.query_params.get('search', None) # Parâmetro para título
