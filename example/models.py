@@ -1,5 +1,6 @@
 from django.db import models
 
+# Definindo um modelo para representar um filme
 class Movie(models.Model):
     title = models.CharField(max_length=255)
     year = models.CharField(max_length=4)

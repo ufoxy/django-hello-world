@@ -5,18 +5,6 @@ from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
 from .models import Movie
 
-# Definindo um modelo para representar um filme
-class Movie:
-    def __init__(self, title, year, released, runtime, genre, poster, metascore, imdb_rating):
-        self.title = title
-        self.year = year
-        self.released = released
-        self.runtime = runtime
-        self.genre = genre
-        self.poster = poster
-        self.metascore = metascore
-        self.imdb_rating = imdb_rating
-
 class MovieListView(APIView):
     OMDB_API_KEY = 'd4d2fab4'  # Chave secreta da OMDb API
 
