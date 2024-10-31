@@ -4,7 +4,19 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
 from .models import Movie
-    
+
+# Definindo um modelo para representar um filme
+class Movie:
+    def __init__(self, title, year, released, runtime, genre, poster, metascore, imdb_rating):
+        self.title = title
+        self.year = year
+        self.released = released
+        self.runtime = runtime
+        self.genre = genre
+        self.poster = poster
+        self.metascore = metascore
+        self.imdb_rating = imdb_rating
+
 class MovieListView(APIView):
     OMDB_API_KEY = 'd4d2fab4'  # Chave secreta da OMDb API
 
@@ -22,11 +34,31 @@ class MovieListView(APIView):
         if response.status_code == 200:
             data = response.json()
             if data['Response'] == 'True':
-                movies = data['Search']
+                movies_data = data['Search']
+                movies = []
+
+                # Para cada filme encontrado, busca detalhes e cria objetos Movie
+                for movie_data in movies_data:
+                    detail_url = f"http://www.omdbapi.com/?apikey={self.OMDB_API_KEY}&i={movie_data['imdbID']}"
+                    detail_response = requests.get(detail_url)
+
+                    if detail_response.status_code == 200:
+                        detail_data = detail_response.json()
+                        movie = Movie(
+                            title=detail_data.get('Title'),
+                            year=detail_data.get('Year'),
+                            released=detail_data.get('Released'),
+                            runtime=detail_data.get('Runtime'),
+                            genre=detail_data.get('Genre'),
+                            poster=detail_data.get('Poster'),
+                            metascore=detail_data.get('Metascore'),
+                            imdb_rating=detail_data.get('imdbRating'),
+                        )
+                        movies.append(movie)
 
                 # Se o ano for fornecido, filtra os filmes pelo ano
                 if year:
-                    movies = [movie for movie in movies if movie.get('Year') == year]
+                    movies = [movie for movie in movies if movie.year == year]
 
                 # Paginação
                 paginator = PageNumberPagination()
@@ -36,14 +68,14 @@ class MovieListView(APIView):
                 # Serializa os dados para a resposta
                 response_data = [
                     {
-                        'Title': movie['Title'],
-                        'Year': movie['Year'],
-                        'Released': movie['Released'],
-                        'Runtime': movie['Runtime'],
-                        'Genre': movie['Genre'],
-                        'Poster': movie['Poster'],
-                        'Metascore': movie['Metascore'],
-                        'imdbRating': movie['imdbRating'],
+                        'Title': movie.title,
+                        'Year': movie.year,
+                        'Released': movie.released,
+                        'Runtime': movie.runtime,
+                        'Genre': movie.genre,
+                        'Poster': movie.poster,
+                        'Metascore': movie.metascore,
+                        'imdbRating': movie.imdb_rating,
                     }
                     for movie in paginated_movies
                 ]
