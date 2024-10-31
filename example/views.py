@@ -108,18 +108,18 @@ class MovieListView(APIView):
 
                 # Serializa os dados para a resposta
                 response_data = [
-            {
-                'Title': movie.title,
-                'Year': movie.year,
-                'Released': movie.released,
-                'Runtime': movie.runtime,
-                'Genre': movie.genre,
-                'Poster': movie.poster,
-                'Metascore': movie.metascore,
-                'imdbRating': movie.imdb_rating,
-            }
-                for movie in paginated_movies
-            ]
+                    {
+                        'Title': movie['Title'],
+                        'Year': movie['Year'],
+                        'Released': movie['Released'],
+                        'Runtime': movie['Runtime'],
+                        'Genre': movie['Genre'],
+                        'Poster': movie['Poster'],
+                        'Metascore': movie['Metascore'],
+                        'imdbRating': movie['imdbRating'],
+                    }
+                    for movie in paginated_movies
+                ]
 
                 return paginator.get_paginated_response(response_data)
             else:
