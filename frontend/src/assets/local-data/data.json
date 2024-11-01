@@ -1,0 +1,538 @@
+[
+  {
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/81dLj5FeX7L._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/81dLj5FeX7L._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/81dLj5FeX7L._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/81dLj5FeX7L._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/81dLj5FeX7L._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 1994,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 2,
+    "title": "The Godfather",
+    "thumbnail": {
+      "trending": {
+        "small": "https://i.wll.pw/storage.waploaded.com/images/bffb454d99d59d717a76e01e3e8d90ed.jpg?w=900&ulb=true&ssl=1",
+        "large": "https://i.wll.pw/storage.waploaded.com/images/bffb454d99d59d717a76e01e3e8d90ed.jpg?w=900&ulb=true&ssl=1"
+      },
+      "regular": {
+        "small": "https://i.wll.pw/storage.waploaded.com/images/bffb454d99d59d717a76e01e3e8d90ed.jpg?w=900&ulb=true&ssl=1",
+        "medium": "https://i.wll.pw/storage.waploaded.com/images/bffb454d99d59d717a76e01e3e8d90ed.jpg?w=900&ulb=true&ssl=1",
+        "large": "https://i.wll.pw/storage.waploaded.com/images/bffb454d99d59d717a76e01e3e8d90ed.jpg?w=900&ulb=true&ssl=1"
+      }
+    },
+    "year": 1972,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 3,
+    "title": "Inception",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/71iDkRVDZNL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71iDkRVDZNL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/71iDkRVDZNL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/71iDkRVDZNL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71iDkRVDZNL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2010,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": true,
+    "isTrending": true
+  },
+  {
+    "id": 4,
+    "title": "Pulp Fiction",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/S/pv-target-images/ca8d07a3b816fd3b82ca55b75e7407e9f34e7a2f9cd822e41de39f35eaf8c49f.jpg",
+        "large": "https://m.media-amazon.com/images/S/pv-target-images/ca8d07a3b816fd3b82ca55b75e7407e9f34e7a2f9cd822e41de39f35eaf8c49f.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/S/pv-target-images/ca8d07a3b816fd3b82ca55b75e7407e9f34e7a2f9cd822e41de39f35eaf8c49f.jpg",
+        "medium": "https://m.media-amazon.com/images/S/pv-target-images/ca8d07a3b816fd3b82ca55b75e7407e9f34e7a2f9cd822e41de39f35eaf8c49f.jpg",
+        "large": "https://m.media-amazon.com/images/S/pv-target-images/ca8d07a3b816fd3b82ca55b75e7407e9f34e7a2f9cd822e41de39f35eaf8c49f.jpg"
+      }
+    },
+    "year": 1994,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 5,
+    "title": "The Dark Knight",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/818hyvdVfvL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2008,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": true,
+    "isTrending": true
+  },
+  {
+    "id": 6,
+    "title": "Forrest Gump",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/61tvKHSEXoL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61tvKHSEXoL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/61tvKHSEXoL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/61tvKHSEXoL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61tvKHSEXoL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 1994,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 7,
+    "title": "The Matrix",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71PfZFFz9yL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 1999,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 8,
+    "title": "Fight Club",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/81D+KJkO4SL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/81D+KJkO4SL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/81D+KJkO4SL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/81D+KJkO4SL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/81D+KJkO4SL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 1999,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": true
+  },
+  {
+    "id": 9,
+    "title": "Interstellar",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/91bnXjZpuyL._UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/91bnXjZpuyL._UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/91bnXjZpuyL._UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/91bnXjZpuyL._UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/91bnXjZpuyL._UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2014,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 10,
+    "title": "Gladiator",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/61ATuIYm1EL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61ATuIYm1EL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/61ATuIYm1EL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/61ATuIYm1EL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61ATuIYm1EL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2000,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 11,
+    "title": "The Lord of the Rings: The Return of the King",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/71X6YzwV0gL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71X6YzwV0gL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/71X6YzwV0gL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/71X6YzwV0gL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71X6YzwV0gL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2003,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": false,
+    "isTrending": true
+  },
+  {
+    "id": 12,
+    "title": "The Silence of the Lambs",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/81SVDO6WcrL.jpg",
+        "large": "https://m.media-amazon.com/images/I/81SVDO6WcrL.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/81SVDO6WcrL.jpg",
+        "medium": "https://m.media-amazon.com/images/I/81SVDO6WcrL.jpg",
+        "large": "https://m.media-amazon.com/images/I/81SVDO6WcrL.jpg"
+      }
+    },
+    "year": 1991,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 13,
+    "title": "The Wolf of Wall Street",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/51MAuTMt+gL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/51MAuTMt+gL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/51MAuTMt+gL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/51MAuTMt+gL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/51MAuTMt+gL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2013,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 14,
+    "title": "Parasite",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/91KArYP03YL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2019,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 15,
+    "title": "Joker",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/51E+o6036kL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/51E+o6036kL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/51E+o6036kL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/51E+o6036kL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/51E+o6036kL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2019,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 16,
+    "title": "Avengers: Endgame",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/816O7WbRGCL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/816O7WbRGCL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/816O7WbRGCL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/816O7WbRGCL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/816O7WbRGCL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2019,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": true,
+    "isTrending": true
+  },
+  {
+    "id": 17,
+    "title": "The Truman Show",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/91AJYESZaVL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/91AJYESZaVL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/91AJYESZaVL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/91AJYESZaVL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/91AJYESZaVL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 1998,
+    "category": "Movie",
+    "rating": "PG",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 18,
+    "title": "The Social Network",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/518zV7F39qL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/518zV7F39qL._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/518zV7F39qL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/518zV7F39qL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/518zV7F39qL._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2010,
+    "category": "Movie",
+    "rating": "PG-13",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 19,
+    "title": "Django Unchained",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/912vL7muRwL.jpg",
+        "large": "https://m.media-amazon.com/images/I/912vL7muRwL.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/912vL7muRwL.jpg",
+        "medium": "https://m.media-amazon.com/images/I/912vL7muRwL.jpg",
+        "large": "https://m.media-amazon.com/images/I/912vL7muRwL.jpg"
+      }
+    },
+    "year": 2012,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 20,
+    "title": "Mad Max: Fury Road",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/A1czF5JpztL.jpg",
+        "large": "https://m.media-amazon.com/images/I/A1czF5JpztL.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/A1czF5JpztL.jpg",
+        "medium": "https://m.media-amazon.com/images/I/A1czF5JpztL.jpg",
+        "large": "https://m.media-amazon.com/images/I/A1czF5JpztL.jpg"
+      }
+    },
+    "year": 2015,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": true
+  },
+  {
+    "id": 21,
+    "title": "Dark",
+    "thumbnail": {
+      "regular": {
+        "small": "./assets/thumbnails/dark/regular/small.jpg",
+        "medium": "./assets/thumbnails/dark/regular/medium.jpg",
+        "large": "./assets/thumbnails/dark/regular/large.jpg"
+      }
+    },
+    "year": 2017,
+    "category": "TV Series",
+    "rating": "18+",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 22,
+    "title": "Whiplash",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/I/61PwPadu4-L._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61PwPadu4-L._AC_UF894,1000_QL80_.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/I/61PwPadu4-L._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/61PwPadu4-L._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61PwPadu4-L._AC_UF894,1000_QL80_.jpg"
+      }
+    },
+    "year": 2014,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": false,
+    "isTrending": true
+  },
+  {
+    "id": 23,
+    "title": "Stranger Things",
+    "thumbnail": {
+      "regular": {
+        "small": "./assets/thumbnails/stranger-things/regular/small.jpg",
+        "medium": "./assets/thumbnails/stranger-things/regular/medium.jpg",
+        "large": "./assets/thumbnails/stranger-things/regular/large.jpg"
+      }
+    },
+    "year": 2016,
+    "category": "TV Series",
+    "rating": "16+",
+    "isBookmarked": true,
+    "isTrending": true
+  },
+  {
+    "id": 24,
+    "title": "Game of Thrones",
+    "thumbnail": {
+      "regular": {
+        "small": "./assets/thumbnails/game-of-thrones/regular/small.jpg",
+        "medium": "./assets/thumbnails/game-of-thrones/regular/medium.jpg",
+        "large": "./assets/thumbnails/game-of-thrones/regular/large.jpg"
+      }
+    },
+    "year": 2011,
+    "category": "TV Series",
+    "rating": "18+",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 25,
+    "title": "The Mandalorian",
+    "thumbnail": {
+      "regular": {
+        "small": "./assets/thumbnails/the-mandalorian/regular/small.jpg",
+        "medium": "./assets/thumbnails/the-mandalorian/regular/medium.jpg",
+        "large": "./assets/thumbnails/the-mandalorian/regular/large.jpg"
+      }
+    },
+    "year": 2019,
+    "category": "TV Series",
+    "rating": "13+",
+    "isBookmarked": true,
+    "isTrending": true
+  },
+  {
+    "id": 26,
+    "title": "The Witcher",
+    "thumbnail": {
+      "regular": {
+        "small": "./assets/thumbnails/the-witcher/regular/small.jpg",
+        "medium": "./assets/thumbnails/the-witcher/regular/medium.jpg",
+        "large": "./assets/thumbnails/the-witcher/regular/large.jpg"
+      }
+    },
+    "year": 2019,
+    "category": "TV Series",
+    "rating": "16+",
+    "isBookmarked": false,
+    "isTrending": false
+  },
+  {
+    "id": 27,
+    "title": "Her",
+    "thumbnail": {
+      "trending": {
+        "small": "https://m.media-amazon.com/images/S/pv-target-images/c9a3ccf3a245f5df023ffc7007d93af8645dddc5a9f6e93412e1b00d7b744836.jpg",
+        "large": "https://m.media-amazon.com/images/S/pv-target-images/c9a3ccf3a245f5df023ffc7007d93af8645dddc5a9f6e93412e1b00d7b744836.jpg"
+      },
+      "regular": {
+        "small": "https://m.media-amazon.com/images/S/pv-target-images/c9a3ccf3a245f5df023ffc7007d93af8645dddc5a9f6e93412e1b00d7b744836.jpg",
+        "medium": "https://m.media-amazon.com/images/S/pv-target-images/c9a3ccf3a245f5df023ffc7007d93af8645dddc5a9f6e93412e1b00d7b744836.jpg",  
+        "large": "https://m.media-amazon.com/images/S/pv-target-images/c9a3ccf3a245f5df023ffc7007d93af8645dddc5a9f6e93412e1b00d7b744836.jpg"
+      }
+    },
+    "year": 2013,
+    "category": "Movie",
+    "rating": "R",
+    "isBookmarked": true,
+    "isTrending": false
+  },
+  {
+    "id": 28,
+    "title": "The Office",
+    "thumbnail": {
+      "regular": {
+        "small": "./assets/thumbnails/the-office/regular/small.jpg",
+        "medium": "./assets/thumbnails/the-office/regular/medium.jpg",
+        "large": "./assets/thumbnails/the-office/regular/large.jpg"
+      }
+    },
+    "year": 2005,
+    "category": "TV Series",
+    "rating": "13+",
+    "isBookmarked": true,
+    "isTrending": false
+  }
+]
