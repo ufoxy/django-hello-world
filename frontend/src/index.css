@@ -72,6 +72,17 @@ body {
   display: block;
 }
 
+.loading-spinner {
+  display: block;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 34px;
+}
+
+.load-more {
+  
+}
+
 @media screen and (max-width: 1440px ) {
   .wrapper {
     grid-template-columns: repeat(4, minmax(280px, 1fr));

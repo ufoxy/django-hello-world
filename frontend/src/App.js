@@ -1,15 +1,10 @@
 import React from 'react';
-
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import Home from '../src/pages/Home/Home';
-import DATA from '../src/assets/local-data/data.json';
 
 function App() {
-
-  const movies = DATA.filter(item => item.category === 'Movie');
-  const tvShows = DATA.filter(item => item.category === 'TV Series');
 
   return (
     <Provider store={store}>

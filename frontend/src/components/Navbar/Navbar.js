@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
-import logo from "../../assets/logo.svg";
 import { ReactComponent as HomeIcon } from "../../assets/icon-nav-home.svg";
 import { ReactComponent as MooviesIcon } from "../../assets/icon-nav-movies.svg";
 import { ReactComponent as TvIcon } from "../../assets/icon-nav-tv-series.svg";
-import { ReactComponent as Bookmark } from "../../assets/icon-nav-bookmark.svg";
-import userAvatar from "./../../assets/image-avatar.png";
+import userAvatar from "./../../assets/image-avatar.jpg";
+import logo from "../../assets/logo.svg";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (

@@ -21,7 +21,7 @@ function Tranding(props) {
 
   return (
     <>
-      <h2 className="tranding__title heading">Tranding</h2>
+      <h2 className="tranding__title heading">Trending</h2>
       <Swiper
         scrollbar={{
           hide: true,

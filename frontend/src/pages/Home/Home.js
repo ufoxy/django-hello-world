@@ -109,7 +109,7 @@ function Home() {
 						)}
 					</ul>
 					{searchValue && (
-						<button onClick={loadMore} className="load-more">
+						<button onClick={loadMore} className="load-more" style={itemsCount === 0 ?{display:'none'}:{display: 'block'}}>
 							Load More
 						</button>
 					)}
