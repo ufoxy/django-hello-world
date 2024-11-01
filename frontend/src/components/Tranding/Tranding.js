@@ -1,8 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TrandingCard from "../TrandingCard/TrandingCard";
-import "swiper/css";
 import { Autoplay } from "swiper";
+import "swiper/css";
 
 function Tranding(props) {
   const tranding = props.data.filter((item) => item.isTrending);

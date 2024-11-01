@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from 'axios';
-import '../Home/Home.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Search from "../../components/Search/Search";
 import Card from "../../components/Card/Card";
@@ -9,6 +8,7 @@ import Tranding from "../../components/Tranding/Tranding";
 import { useDispatch } from 'react-redux';
 import { setValue } from "../../redux/slices/searchSlice";
 import defaultThumbnail from '../../assets/default-thumbnail.jpg';
+import '../Home/Home.css';
 
 function Home() {
 	const data = useSelector((state) => state.bookmarkedSlice.DATA);
@@ -30,11 +30,10 @@ function Home() {
 			const fetchData = async (page = 1) => {
 				setLoading(true);
 				try {
-					// Monta a URL da requisição
 					const response = await axios.get('https://zmovies-backend.vercel.app/api/movies/', {
 						params: {
 							search: searchValue,
-							year: yearValue || undefined, // Inclui o ano apenas se ele estiver definido
+							year: yearValue || undefined,
 							page: page
 						}
 					});
@@ -52,7 +51,7 @@ function Home() {
 			setApiData([]);
 			setCurrentPage(1);
 		}
-	}, [searchValue, yearValue, currentPage]); // Adiciona yearValue como dependência
+	}, [searchValue, yearValue, currentPage]);
 
 	useEffect(() => {
 		setItemsCount(wrap.current ? wrap.current.childElementCount : 0);
@@ -61,7 +60,7 @@ function Home() {
 	useEffect(() => {
 		setCurrentPage(1);
 		setApiData([]);
-	}, [searchValue, yearValue]); // Reseta a página e os dados quando o valor da pesquisa ou o ano mudam
+	}, [searchValue, yearValue]);
 
 	const loadMore = () => {
 		setCurrentPage((prevPage) => prevPage + 1);
@@ -85,7 +84,7 @@ function Home() {
 			<section className="home">
 				<div className="container">
 					<Search placeholder={"Search for movies or TV series"} />
-					{loading && <div className="loading-spinner">Carregando...</div>}
+					{loading && <div className="loading-spinner">Loading...</div>}
 					{searchValue && !loading? <span className='search-result show'>Found {itemsCount} results for "{searchValue}"</span>: <></>}
 					{!searchValue && <Tranding data={data} />}
 					{!searchValue && <h2 className="recomended__title heading">Recommended for you</h2>}
@@ -109,7 +108,7 @@ function Home() {
 						)}
 					</ul>
 					{searchValue && (
-						<button onClick={loadMore} className="load-more" style={itemsCount === 0 ?{display:'none'}:{display: 'block'}}>
+						<button onClick={loadMore} className="button" style={itemsCount === 0 ?{display:'none'}:{display: 'block'}}>
 							Load More
 						</button>
 					)}

@@ -404,9 +404,9 @@
     "title": "Dark",
     "thumbnail": {
       "regular": {
-        "small": "./assets/thumbnails/dark/regular/small.jpg",
-        "medium": "./assets/thumbnails/dark/regular/medium.jpg",
-        "large": "./assets/thumbnails/dark/regular/large.jpg"
+        "small": "https://uauposters.com.br/media/catalog/product/5/0/507720201013-uau-posters-series-seriado-dark-1.jpg",
+        "medium": "https://uauposters.com.br/media/catalog/product/5/0/507720201013-uau-posters-series-seriado-dark-1.jpg",
+        "large": "https://uauposters.com.br/media/catalog/product/5/0/507720201013-uau-posters-series-seriado-dark-1.jpg"
       }
     },
     "year": 2017,
@@ -440,9 +440,9 @@
     "title": "Stranger Things",
     "thumbnail": {
       "regular": {
-        "small": "./assets/thumbnails/stranger-things/regular/small.jpg",
-        "medium": "./assets/thumbnails/stranger-things/regular/medium.jpg",
-        "large": "./assets/thumbnails/stranger-things/regular/large.jpg"
+        "small": "https://img.elo7.com.br/product/main/3BF0EA2/poster-cartaz-adesivo-decorativo-stranger-things-b-42-5x60cm-stranger-things.jpg",
+        "medium": "https://img.elo7.com.br/product/main/3BF0EA2/poster-cartaz-adesivo-decorativo-stranger-things-b-42-5x60cm-stranger-things.jpg",
+        "large": "https://img.elo7.com.br/product/main/3BF0EA2/poster-cartaz-adesivo-decorativo-stranger-things-b-42-5x60cm-stranger-things.jpg"
       }
     },
     "year": 2016,
@@ -456,9 +456,9 @@
     "title": "Game of Thrones",
     "thumbnail": {
       "regular": {
-        "small": "./assets/thumbnails/game-of-thrones/regular/small.jpg",
-        "medium": "./assets/thumbnails/game-of-thrones/regular/medium.jpg",
-        "large": "./assets/thumbnails/game-of-thrones/regular/large.jpg"
+        "small": "https://cdn.europosters.eu/image/1300/game-of-thrones-season-1-key-art-i160751.jpg",
+        "medium": "https://cdn.europosters.eu/image/1300/game-of-thrones-season-1-key-art-i160751.jpg",
+        "large": "https://cdn.europosters.eu/image/1300/game-of-thrones-season-1-key-art-i160751.jpg"
       }
     },
     "year": 2011,
@@ -472,9 +472,9 @@
     "title": "The Mandalorian",
     "thumbnail": {
       "regular": {
-        "small": "./assets/thumbnails/the-mandalorian/regular/small.jpg",
-        "medium": "./assets/thumbnails/the-mandalorian/regular/medium.jpg",
-        "large": "./assets/thumbnails/the-mandalorian/regular/large.jpg"
+        "small": "https://m.media-amazon.com/images/I/71FuoaWFGhL._AC_UF1000,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/71FuoaWFGhL._AC_UF1000,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/71FuoaWFGhL._AC_UF1000,1000_QL80_.jpg"
       }
     },
     "year": 2019,
@@ -488,9 +488,9 @@
     "title": "The Witcher",
     "thumbnail": {
       "regular": {
-        "small": "./assets/thumbnails/the-witcher/regular/small.jpg",
-        "medium": "./assets/thumbnails/the-witcher/regular/medium.jpg",
-        "large": "./assets/thumbnails/the-witcher/regular/large.jpg"
+        "small": "https://m.media-amazon.com/images/I/61+ix81a5yL._AC_UF894,1000_QL80_.jpg",
+        "medium": "https://m.media-amazon.com/images/I/61+ix81a5yL._AC_UF894,1000_QL80_.jpg",
+        "large": "https://m.media-amazon.com/images/I/61+ix81a5yL._AC_UF894,1000_QL80_.jpg"
       }
     },
     "year": 2019,
@@ -524,9 +524,9 @@
     "title": "The Office",
     "thumbnail": {
       "regular": {
-        "small": "./assets/thumbnails/the-office/regular/small.jpg",
-        "medium": "./assets/thumbnails/the-office/regular/medium.jpg",
-        "large": "./assets/thumbnails/the-office/regular/large.jpg"
+        "small": "https://i0.wp.com/i.ebayimg.com/images/g/LsAAAOSwJwdjDvYE/s-l1600.jpg?ssl=1",
+        "medium": "https://i0.wp.com/i.ebayimg.com/images/g/LsAAAOSwJwdjDvYE/s-l1600.jpg?ssl=1",
+        "large": "https://i0.wp.com/i.ebayimg.com/images/g/LsAAAOSwJwdjDvYE/s-l1600.jpg?ssl=1"
       }
     },
     "year": 2005,
