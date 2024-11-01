@@ -32,21 +32,25 @@ class MovieListView(APIView):
 
                     if detail_response.status_code == 200:
                         detail_data = detail_response.json()
+                        thumbnail = {
+                            "regular": {
+                                "small": detail_data.get('Poster'),
+                                "medium": detail_data.get('Poster'),
+                                "large": detail_data.get('Poster'),
+                            }
+                        }
                         movie = Movie(
                             title=detail_data.get('Title'),
                             year=detail_data.get('Year'),
-                            released=detail_data.get('Released'),
-                            runtime=detail_data.get('Runtime'),
-                            genre=detail_data.get('Genre'),
-                            poster=detail_data.get('Poster'),
-                            metascore=detail_data.get('Metascore'),
-                            imdb_rating=detail_data.get('imdbRating'),
+                            category=detail_data.get('Genre'),
+                            rating=detail_data.get('Rated'),
+                            thumbnail=thumbnail
                         )
                         movies.append(movie)
 
                 # Se o ano for fornecido, filtra os filmes pelo ano
                 if year:
-                    movies = [movie for movie in movies if movie.year == year]
+                    movies = [movie for movie in movies if str(movie.year) == year]
 
                 # Paginação
                 paginator = PageNumberPagination()
@@ -54,19 +58,7 @@ class MovieListView(APIView):
                 paginated_movies = paginator.paginate_queryset(movies, request)
 
                 # Serializa os dados para a resposta
-                response_data = [
-                    {
-                        'Title': movie.title,
-                        'Year': movie.year,
-                        'Released': movie.released,
-                        'Runtime': movie.runtime,
-                        'Genre': movie.genre,
-                        'Poster': movie.poster,
-                        'Metascore': movie.metascore,
-                        'imdbRating': movie.imdb_rating,
-                    }
-                    for movie in paginated_movies
-                ]
+                response_data = [movie.to_dict() for movie in paginated_movies]
 
                 return paginator.get_paginated_response(response_data)
             else:

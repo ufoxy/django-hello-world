@@ -1,15 +1,25 @@
-from django.db import models
+import random
 
-# Definindo um modelo para representar um filme
-class Movie(models.Model):
-    title = models.CharField(max_length=255)
-    year = models.CharField(max_length=4)
-    released = models.CharField(max_length=50)
-    runtime = models.CharField(max_length=50)
-    genre = models.CharField(max_length=100)
-    poster = models.URLField()
-    metascore = models.CharField(max_length=10, blank=True, null=True)
-    imdb_rating = models.CharField(max_length=10, blank=True, null=True)
+class Movie:
+    def __init__(self, title, year, category, rating, thumbnail):
+        self.id = random.randint(1, 10000)  # Gera um ID aleatório entre 1 e 10000
+        self.title = title
+        self.year = year
+        self.category = category
+        self.rating = rating
+        self.isBookmarked = False
+        self.isTrending = False
+        self.thumbnail = thumbnail
 
-    def __str__(self):
-        return self.title
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "title": self.title,
+            "year": self.year,
+            "category": self.category,
+            "rating": self.rating,
+            "isBookmarked": self.isBookmarked,
+            "isTrending": self.isTrending,
+            "thumbnail": self.thumbnail,
+        }
+    
