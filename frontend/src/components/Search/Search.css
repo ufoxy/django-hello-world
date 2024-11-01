@@ -1,6 +1,7 @@
 .search__fieldset {
     display: flex;
     align-items: center;
+    padding: 25px 0 10px 0;
 }
 
 .search__icon {

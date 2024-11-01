@@ -7,14 +7,16 @@ import { setValue } from "../../redux/slices/searchSlice";
 function Search({ placeholder }) {
     const dispatch = useDispatch();
     const [inputValue, setInputValue] = useState('');
+    const [yearValue, setYearValue] = useState(''); // Estado para o ano
 
-    function changeHandler(value) {
-        dispatch(setValue(value));
+    function changeHandler(searchValue, year) {
+        dispatch(setValue({ searchValue, year })); // Envia um objeto com ambos os valores
     }
 
     const handleButtonClick = () => {
-        changeHandler(inputValue);
-        setInputValue(''); // Limpa o input após o envio, se desejado
+        changeHandler(inputValue, yearValue); // Envia o valor do input e do ano
+        setInputValue(''); // Limpa o input de busca
+        setYearValue(''); // Limpa o input do ano
     };
 
     return (
@@ -27,6 +29,14 @@ function Search({ placeholder }) {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 maxLength={20}
+            />
+            <input
+                className="search__input"
+                type="number"
+                placeholder="Ano"
+                value={yearValue}
+                onChange={(e) => setYearValue(e.target.value)}
+                maxLength={4}
             />
             <button onClick={handleButtonClick}>Enviar</button>
         </div>

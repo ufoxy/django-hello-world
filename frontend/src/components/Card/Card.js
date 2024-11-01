@@ -25,6 +25,8 @@ function Card({ title, thumbnail, year, rating, category, id, bookmark }) {
 		}
 	}
 
+	const capitalized = category.charAt(0).toUpperCase() + category.slice(1);
+
 	return (
 		<li className='card'>
 			<div className='card__top' style={{ backgroundImage: "url(" + `${thumbnail}` + ")" }}>
@@ -36,8 +38,8 @@ function Card({ title, thumbnail, year, rating, category, id, bookmark }) {
 				<div className='card__information'>
 					<span className='year'>{year}</span>
 					<span className='category'>
-						<img className='category__icon' src={icons[category]} alt="category-icon" />
-						{category}
+						<img className='category__icon' src={icons[capitalized]} alt="category-icon" />
+						{capitalized}
 					</span>
 					<span className='rating'>{rating}</span>
 				</div>
