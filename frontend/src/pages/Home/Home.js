@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import axios from 'axios'; // Importa o axios
+import axios from 'axios';
 import '../Home/Home.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Search from "../../components/Search/Search";
@@ -8,43 +8,76 @@ import { useSelector } from 'react-redux';
 import Tranding from "../../components/Tranding/Tranding";
 import { useDispatch } from 'react-redux';
 import { setValue } from "../../redux/slices/searchSlice";
+import defaultThumbnail from '../../assets/default-thumbnail.jpg';
 
 function Home() {
 	const data = useSelector((state) => state.bookmarkedSlice.DATA);
-	const searchValue = useSelector((state) => state.searchSlice.value);
-	const [apiData, setApiData] = useState([]); // Para armazenar os dados da API
+	const searchValue = useSelector((state) => state.searchSlice.value.searchValue);
+	const yearValue = useSelector((state) => state.searchSlice.value.year);
+	const [apiData, setApiData] = useState([]);
 	const [itemsCount, setItemsCount] = useState(0);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [loading, setLoading] = useState(false);
 	const wrap = useRef('');
 	const dispatch = useDispatch();
-	
+
 	useEffect(() => {
 		dispatch(setValue(''));
 	}, [dispatch]);
 
 	useEffect(() => {
 		if (searchValue) {
-			// Função para buscar dados na API
-			const fetchData = async () => {
+			const fetchData = async (page = 1) => {
+				setLoading(true);
 				try {
-					const response = await axios.get(`https://zmovies-backend.vercel.app/api/movies/?search=${searchValue}`, {
-						params: { query: searchValue } // Envia o parâmetro de consulta
+					// Monta a URL da requisição
+					const response = await axios.get('https://zmovies-backend.vercel.app/api/movies/', {
+						params: {
+							search: searchValue,
+							year: yearValue || undefined, // Inclui o ano apenas se ele estiver definido
+							page: page
+						}
 					});
-					setApiData(response.data); // Atualiza o estado com os dados da API
+					console.log(response.data);
+					setApiData((prevData) => [...prevData, ...response.data.results]);
 				} catch (error) {
 					console.error('Erro ao buscar dados:', error);
+				} finally {
+					setLoading(false);
 				}
 			};
 
-			fetchData();
+			fetchData(currentPage);
 		} else {
-			// Se não houver searchValue, reseta os dados da API
 			setApiData([]);
+			setCurrentPage(1);
 		}
-	}, [searchValue]);
+	}, [searchValue, yearValue, currentPage]); // Adiciona yearValue como dependência
 
 	useEffect(() => {
 		setItemsCount(wrap.current ? wrap.current.childElementCount : 0);
-	}, [searchValue, apiData]); // Atualiza o contador de itens baseado no searchValue e na apiData
+	}, [searchValue, apiData]);
+
+	useEffect(() => {
+		setCurrentPage(1);
+		setApiData([]);
+	}, [searchValue, yearValue]); // Reseta a página e os dados quando o valor da pesquisa ou o ano mudam
+
+	const loadMore = () => {
+		setCurrentPage((prevPage) => prevPage + 1);
+	};
+
+	const getThumbnail = (item) => {
+		const large = item.thumbnail?.regular?.large;
+		const medium = item.thumbnail?.regular?.medium;
+		const small = item.thumbnail?.regular?.small;
+
+		if (large && large !== 'N/A') return large;
+		if (medium && medium !== 'N/A') return medium;
+		if (small && small !== 'N/A') return small;
+
+		return defaultThumbnail;
+	};
 
 	return (
 		<>
@@ -52,21 +85,22 @@ function Home() {
 			<section className="home">
 				<div className="container">
 					<Search placeholder={"Search for movies or TV series"} />
-					{searchValue && <span className='search-result show'>Found {itemsCount} results for "{searchValue}"</span>}
+					{loading && <div className="loading-spinner">Carregando...</div>}
+					{searchValue && !loading? <span className='search-result show'>Found {itemsCount} results for "{searchValue}"</span>: <></>}
 					{!searchValue && <Tranding data={data} />}
 					{!searchValue && <h2 className="recomended__title heading">Recommended for you</h2>}
 					<ul className="wrapper" ref={wrap}>
 						{(searchValue ? apiData : data).filter((item) => {
 							if (!searchValue) {
-								return item; // Retorna todos os itens se não houver searchValue
+								return item;
 							}
-							return item.title.toLowerCase().includes(searchValue.toLowerCase()); // Filtra os itens baseados no searchValue
+							return item.title.toLowerCase().includes(searchValue.toLowerCase());
 						}).map((item) =>
 							<Card
 								key={item.id}
 								id={item.id}
 								title={item.title}
-								thumbnail={item.thumbnail.regular.medium}
+								thumbnail={getThumbnail(item)}
 								year={item.year}
 								rating={item.rating}
 								category={item.category}
@@ -74,6 +108,11 @@ function Home() {
 							/>
 						)}
 					</ul>
+					{searchValue && (
+						<button onClick={loadMore} className="load-more">
+							Load More
+						</button>
+					)}
 				</div>
 			</section>
 		</>
