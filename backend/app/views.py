@@ -42,7 +42,7 @@ class MovieListView(APIView):
                         movie = Movie(
                             title=detail_data.get('Title'),
                             year=detail_data.get('Year'),
-                            category=detail_data.get('Genre'),
+                            category=detail_data.get('Type'),
                             rating=detail_data.get('Rated'),
                             thumbnail=thumbnail
                         )
