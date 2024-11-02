@@ -39,6 +39,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .search__fieldset {
     gap: 5px;
+    padding: 0;
   }
 }
 
