@@ -55,7 +55,7 @@ Antes de começar, verifique se você tem os seguintes pré-requisitos instalado
    Após fazer os passos da instalação apenas inicie o projeto:
 
    ```bash
-   $ python manage.py migrate
+   $ python manage.py runserver
 
 ## Como Testar?
 
