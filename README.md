@@ -27,7 +27,7 @@ Observações:
 
 O projeto foi desenvolvido em uma estrutura monorepo, onde todo o código-fonte está organizado em um único repositório para facilitar o gerenciamento.
 
-Nas duas partes do projeto, tanto na pasta do frontend quanto no backend, eu explico em detalhes como cada uma pode ser testada.
+Ambas as partes do projeto, backend e frontend, foram hospedadas na Vercel. Nas duas partes do projeto, dentro das pastas, eu explico em detalhes como cada uma pode ser testada.
 
 ## Tecnologias
 
