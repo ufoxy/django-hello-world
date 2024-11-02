@@ -38,3 +38,13 @@ Antes de começar, verifique se você tem os seguintes pré-requisitos instalado
    ```bash
    $ npm run start
 
+## Deploy
+
+### O Projeto Frontend tem Hospedagem na Vercel.
+
+1. **Acesso**
+
+   Entre pelo link do deploy e acesse o projeto.
+
+   ```bash
+   https://zmovies-project.vercel.app/
