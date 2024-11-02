@@ -42,7 +42,9 @@ Backend: Python, Django <br>
 
 ## Imagens
 
-<img src="screenshot.png" alt="Screenshot do Projeto" style="width: 100%;"/>
+
+
+![Screenshot do Projeto](https://media.discordapp.net/attachments/1097323194874073198/1302086130652545104/zmovie_screenshot.png?ex=6726d5b5&is=67258435&hm=47d4298e1feca70090ed4e5c21f6bfea8f60fe35560317d097bbe93f4d8272b4&=&format=webp&quality=lossless&width=1920&height=1080)
 
 ## Instalação
 
